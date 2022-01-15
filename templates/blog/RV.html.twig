@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <h1>Inscrivez-vous pour prendre un rendez-vous</h1>
+            <link rel="stylesheet" href="templates\blog\CSSRV">
+        <style>
+                body {
+                    border-left: 5px;   
+                    border-right: 5px;                   
+                    width :70%;					         
+                    height: auto;	
+                    text-align: center;
+                    margin-left:auto;
+                    margin-right:auto;
+                    font-size:16px;
+                    text-decoration : none;         
+                    font-variant : normal; 
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    max-width: 1000px;    
+                    min-width: 500px;
+                    max-height:1000px;
+                    min-height: 500px;
+                    box-shadow: 0 0 30px rgba(0, 0, 0.5, 0.5);
+                    background-color: #524A3A;
+                    color: #FFFAE1;
+                    padding: 20px 0 10px 0;
+                }
+                form {
+                    margin: 0 auto;
+                    max-width: 900px;
+                }
+
+                input, textarea, button {
+                    border: none;
+                    width: 55%;
+                    padding: 15px 10px;
+                    margin: 2px 0;
+                    font-size: 1.2em;
+                    font-family: 'Advent Pro', sans-serif;
+                    border-radius: 8px;
+
+                }
+
+                button{
+                    font-size: 1.5em;
+                    background-color: #FFFAE1;
+                    margin-top:auto;
+                    margin-bottom:auto;
+                }
+
+                button:hover{
+                    background-color: #e55039;
+                    color: #FFFAE1;
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
+                    margin-top:auto;
+                    margin-bottom:auto;
+                }
+        </style>
+       
+        </head>
+<body>
+            <?php include 'menunavigation.php'; ?>
+            <form action="http://127.0.0.1:8000/conf">
+                <label for="fname">Prénom:</label><br>
+                <input type="text" name="Prénom" id="Prénom" placeholder=" Entrer votre Prénom" ><br>
+                <label for="lname">Nom:</label><br>
+                <input type="text" name="Nom" id="Nom" placeholder="Entrer votre Nom" ><br>
+                <label for="email">email:</label><br>
+                <input type="text" name="email" id="email" placeholder="Entrer Email..." ><br>
+                <label for="telephone">Téléphone:</label><br>
+                <input type="text" name="Téléphone" id="Téléphone" placeholder="Entrer votre Numéro" ><br>
+                <label for="Date">Date:</label><br>
+                <input type="Date" id="Date" placeholder="jj/mm" ><br>
+                <label for="hour">Créneau:</label><br>
+                <input type="horaire" name="Créneau" id="Créneau" placeholder="hh:mm" ><br>
+                <button type="submit" value="Confirmer">Confirmer</button>
+            </form>
+            
+
+</body> 
+</html>     

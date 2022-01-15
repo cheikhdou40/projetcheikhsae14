@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block body  %}
+   <!DOCTYPE html>
+   <html>
+      <head>
+         <title>Page personnelle</title>
+         <link href="style.css" rel="stylesheet" type="text/css"/>
+      </head>
+   <body>
+      <div id="logo">
+      <h2>Personal informations</h2>
+         <ul>Name :Dieng</ul>
+         <ul>Surname :Cheikh</ul>
+         <ul>Date and day of birth :January , 1st</ul>
+         <ul>E-mail address: cheikh.dieng@etu.univ-st-etienne.fr</ul>
+         <ul>Postcode: 42300</ul>
+         <ul>Address of domicile: 6 rue Alexandre Roche , Roanne</ul>
+         <ul>Phone number: 0652452275</ul>
+      <h2>Welcome to my personal website</h2>
+      </div>
+      <nav>
+         <ul>
+            
+            <li><a href="mes photos pour la sae14/CV SAE14 online_files">CV</a></li>
+            <a href="/CV SAE14/CV SAE14.pdf" download="/CV SAE14/CV SAE14.pdf"> <button type="button" class="btn btn-success">This link downloads the CV in PDF</button></a>
+            <li><a href="mes photos pour la sae14/portfolio.pdf">Portfolio de compétences</a></li>
+            <li><a href="http://127.0.0.1:8000/loi">Pour en savoir plus</a></li>
+         </ul>
+      </nav>
+      <div id="contenu">
+         <p>I am a Senegalese student currently enrolled in first year Network and Telecoms at the IUT of Roanne and I propose here a CV that
+            retraces my path, my portfolio of skills . Go also
+            visit this site!</p>
+      <div id="contact">
+         <p>For any questions, please contact me at:
+            <span>cheikh.dieng@etu.univ-st-etienne.fr</span></p>
+      </div>
+      </div>
+      <main>
+         <section id="Prise de rendez-vous!"></section>
+      </main>
+   </body>
+</html>
+
+{% endblock %}

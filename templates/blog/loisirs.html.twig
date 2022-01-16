@@ -1,63 +1,93 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <title>It's me</title>
-    <style>
-        body {
-            border-left: 5px;   
-            border-right: 5px;                   
-            width :70%;					         
-            height: auto;	
-            text-align: center;
-            margin-left:auto;
-            margin-right:auto;
-            font-size:16px;
-            text-decoration : none;         
-            font-variant : normal; 
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            max-width: 1000px;    
-            min-width: 500px;
-            max-height:1000px;
-            min-height: 500px;
-            background-color: #524A3A;
-            color: #FFFAE1;
-            padding: 20px 0 10px 0;
-        }
-        img {
+<html>
+  <title>It's me</title>
+  <head>
+      <style>
+          *{box-sizing: border-box }
+
+            img{
+
+            max-width:100%
+
+            }
+
+            @keyframes animation_slide {
+            0% {left:0}
+            20%{left:0}/*image1*/
+
+            25%{left:-100%}
+            45%{left:-100%}/*image2*/
+
+            50%{left:-200%}
+            70%{left:-200%}/*image3*/
+
+            75%{left:-300%}/*image4*/
+            95%{left:-300%}
+
+            100%{left:-400%}/*image1*/}
+
+            @-webkit-keyframes animation_slide {
+            0% {left:0}
+            20%{left:0}/*image1*/
+
+            25%{left:-100%}
+            45%{left:-100%}/*image2*/
+
+            50%{left:-200%}
+            70%{left:-200%}/*image3*/
+
+            75%{left:-300%}/*image4*/
+            95%{left:-300%}
+
+            100%{left:-400%}/*image1*/}
+
+
+            figure img{
+
+            pointer-events:none;
+            width:20%;
+            height:100vh;
+            object-fit:contain;
+            float:left
+
+            }
+
+            figure{
+
+
+            position: relative;
+            width: 500%;
+            animation: 30s animation_slide infinite; 
+
+            }
+            img {
             border-radius: 15%;
             box-shadow: 5px 8px 5px 2px black;
             background-size: cover;
-        }
-        
-    </style>
-    </head>
-    <body>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <h2>Do everything for a day to be decorated</h2>
-        <img src="mes photos pour la sae14/decoration.JPG">
-        <img src="mes photos pour la sae14/decoration2.MP4">
-        <h2>Behind the wheel, what it gives</h2>
-        <img src="mes photos pour la sae14/conduire.JPG">
-        <h2>At the gym, we feel good with friends</h2>
-        <img src="mes photos pour la sae14/salle de sport.JPG">
-        <h2>When we’re getting ready to go to a party</h2>
-        <img src="mes photos pour la sae14/soiree.JPG">
-        <h2>Religious holidays are a part of us</h2>
-        <img src="mes photos pour la sae14/Tabaski.JPG">
-        <img src="mes photos pour la sae14/tabaski2.MP4">
-        <img src="mes photos pour la sae14/tabaski3.jpg">
-        <h2>It feels good</h2>
-        <img src="mes photos pour la sae14/moi1.JPG">
-        <img src="mes photos pour la sae14/MOI2.JPG">
-        <img src="mes photos pour la sae14/MOI3.jpg">
-        <img src="mes photos pour la sae14/cheikh.jpg">
-        <h2>At school</h2>
-        <img src="mes photos pour la sae14/ecole.JPG">
-        <h2>At the village </h2>
-        <img src="mes photos pour la sae14/village.JPG">
-        
-        
-    </body>
+            }
+            span{
+            text-align: center;
+            color: antiquewhite;
+            font-size: 3em;
+            text-shadow: 1px 2px 3px black; 
+            }
+       </style>
+    <figure>
+    <ul>
+    <li><img src="mes photos pour la sae14/decoration.JPG" alt><span>Do everything for a day to be decorated</span></li>
+    <li><img src="mes photos pour la sae14/conduire.JPG" alt><span>Behind the wheel, what it gives</span></li>
+    <li><img src="mes photos pour la sae14/salle de sport.JPG" alt><span>At the gym, we feel good with friends</span></li>
+    <li><img src="mes photos pour la sae14/soiree.JPG" alt><span>When we’re getting ready to go to a party</span></li>
+    <li><img src="mes photos pour la sae14/Tabaski.JPG" alt><span>Religious holidays are a part of us</span></li>
+    <li><img src="mes photos pour la sae14/tabaski3.jpg" alt><span>Religious holidays are a part of us</span></li>
+    <li><img src="mes photos pour la sae14/moi1.JPG" alt><span>It feels good</span></li>
+    <li><img src="mes photos pour la sae14/MOI2.JPG" alt><span>It feels good</span></li>
+    <li><img src="mes photos pour la sae14/MOI3.jpg" alt><span>It feels good</span></li>
+    <li><img src="mes photos pour la sae14/ecole.JPG" alt><span>At school</span></li>
+    <li><img src="mes photos pour la sae14/village.JPG" alt><span>At the village</span></li>
+    </ul>
+    </figure>
+    </div>
+  
 </html>
 

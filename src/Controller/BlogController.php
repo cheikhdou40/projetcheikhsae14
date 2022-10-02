@@ -17,44 +17,35 @@ class BlogController extends AbstractController
             'controller_name' => 'BlogController',
         ]);
     }
-     /**
+    
+	/**
 	 * @Route("/",name="home") {
      */
     public function home () {
-	    return $this->render('blog/home.html.twig',[
-            
-        ]);	
+	    return $this->render('blog/home.html.twig');	
 	}
-     /**
+	/**
 	 * @Route("/loi",name="loisirs") {
      */
     public function loi () {
-	    return $this->render('blog/loisirs.html.twig',[
-            
-        ]);	
+	    return $this->render('blog/loisirs.html.twig');	
 	}
-     /**
+	/**
 	 * @Route("/rv",name="RV") {
      */
     public function rv () {
-	    return $this->render('blog/RV.html.twig',[
-            
-        ]);	
+	    return $this->render('blog/RV.html.twig');	
 	}
-    /**
+	/**
 	 * @Route("/conf",name="confirmationRV") {
      */
     public function conf () {
-	    return $this->render('blog/confirmationRV.html.twig',[
-            
-        ]);	
+	    return $this->render('blog/confirmationRV.html.twig');	
 	}
-    /**
+	/**
 	 * @Route("/port",name="portfolio") {
      */
     public function port () {
-	    return $this->render('blog/portfolio.html.twig',[
-            
-        ]);	
+	    return $this->render('blog/portfolio.html.twig');	
 	}
 }

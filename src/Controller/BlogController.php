@@ -31,10 +31,10 @@ class BlogController extends AbstractController
 	    return $this->render('blog/loisirs.html.twig');	
 	}
 	/**
-	 * @Route("/rv",name="RV") {
+	 * @Route("/login",name="login") {
      */
-    public function rv () {
-	    return $this->render('blog/RV.html.twig');	
+    public function login () {
+	    return $this->render('security/login.html.twig');	
 	}
 	/**
 	 * @Route("/conf",name="confirmationRV") {
